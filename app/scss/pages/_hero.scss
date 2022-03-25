@@ -1,8 +1,8 @@
 .hero {
   background-image: linear-gradient(
       to bottom,
-      rgba(255, 255, 255, 0),
-      rgba(0, 0, 0, 0.33)
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.0)
     ),
     url("/images/hero-car.jpg");
   background-size: cover;
@@ -24,12 +24,29 @@
 
       .hero-subtitle {
         font-size: 2rem;
-        color: rgb(117, 117, 117);
+        color: rgb(0, 0, 0);
       }
     }
 
     .hero-btn {
       margin-top: 4em;
     }
+
+
+    .handy {
+      color: rgb(255, 217, 0);
+      text-shadow: rgba(0, 0, 0, 0.363) 0px 2px 5px;
+    }
+
+    .generation {
+      color: red;
+      text-shadow: rgba(0, 0, 0, 0.205) 0px 2px 10px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1550px) {
+  .hero-container {
+    width: 1100px;
   }
 }
