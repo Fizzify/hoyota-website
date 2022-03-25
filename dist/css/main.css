@@ -1,0 +1,150 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: 'Roboto', sans-serif;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+.btn {
+  background-color: black;
+  padding: 1em 3em;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  outline: 2px solid gold;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.185) 0px 0px 50px;
+          box-shadow: rgba(0, 0, 0, 0.185) 0px 0px 50px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: rgba(0, 0, 0, 0.527);
+}
+
+.nav-bar {
+  position: fixed;
+  background-color: black;
+  width: 100%;
+}
+
+.nav-bar .nav-logo {
+  width: 35px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.nav-bar .nav-logo:hover {
+  opacity: 0.7;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.nav-bar ul {
+  list-style: none;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nav-bar ul li {
+  padding-left: 3em;
+}
+
+.nav-bar ul .nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 300;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.nav-bar ul .nav-link:hover {
+  opacity: 0.7;
+}
+
+.hero {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.33))), url("/images/hero-car.jpg");
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.33)), url("/images/hero-car.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+.hero .hero-container {
+  padding-top: 15em;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.hero .hero-container .hero-text .hero-title {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+}
+
+.hero .hero-container .hero-text .hero-subtitle {
+  font-size: 2rem;
+  color: #757575;
+}
+
+.hero .hero-container .hero-btn {
+  margin-top: 4em;
+}
+/*# sourceMappingURL=main.css.map */
